@@ -10,7 +10,7 @@ var n = 0;
           "left": "-=1000px"
      }, 2000, function(){
           n++;
-          if (n==3) {
+          if (n==2) {
                n=0;
                $(this).css("left", "0px");
           }

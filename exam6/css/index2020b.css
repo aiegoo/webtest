@@ -165,14 +165,14 @@ a {
 }
 
 .banner {
-     width: 1000px;
+     width: 3000px;
      height: 300px;
      margin: 0 auto;
      position: relative;
      overflow: hidden;
 }
 .slide {
-     width: 4000px;
+     width: 1000px;
      height: 300px;
      position: absolute;
      z-index: -1;
