@@ -7,6 +7,7 @@ html, body {
      color: #333;
      position: relative;
      font-size: 16px;
+     font-family: sans-serif;
 }
 
 div, ul, li, ol, h1, h2, h3, h4, h5 {
