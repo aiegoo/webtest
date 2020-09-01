@@ -168,18 +168,18 @@ a {
      width: 3000px;
      height: 300px;
      margin: 0 auto;
-     position: relative;
-     overflow: hidden;
+     position: relative;;
 }
-.slide {
+ul.slide {
      width: 1000px;
      height: 300px;
-     position: absolute;
      z-index: -1;
+     overflow: hidden;
 }
 
 .slide li {
      float: left;
+     position: absolute;
 }
 
 .slide li img {

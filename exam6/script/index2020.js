@@ -23,7 +23,7 @@ function modalOpen(){
 
 function modalClose(){
      $("#modal-bg").hide();
-     $("3modal-wrap").css("display", "none");
+     $("#modal-wrap").css("display", "none");
 }
 
 
