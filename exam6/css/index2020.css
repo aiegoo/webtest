@@ -8,6 +8,7 @@ html, body {
      font-size: 16px;
      color: #333;
      position: relative;
+     font-family: sans-serif;
 }
 
 div, ul, li, ol, h1, h2, h3, h4 {
@@ -72,36 +73,34 @@ a {
 .wrap {
      width: 1000px;
      margin: 0 auto;
+     background: #303e3d;
 }
 
 .header {
-     width: 100%;
-     height: 100px;
-     background-color: #eee;
      position: relative;
+     padding: 2rem;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
 }
-
-.logo {
-     float: left;
+.logo{
+    flex: 0 0 20%;
 }
+.logo img {width: 100%;}
 
 .navs {
-     float: right;
      text-align: center;
-     width: 600px;
-     background: rgba(0,128,0, 0.3);
+     border: 1px solid;
 }
 
-.nav {
-     float: left;
-     height: 100px;
-}
+.nav {display: flex;}
 
 .nav div {
      color:#fff;
-     width: 150px;
-     float: left;
-     line-height: 100px;
+     border: 1px solid rgb(255 255 255 / 26%);
+     padding: 1rem;
+     margin-left: -1px;
+     cursor: pointer;
 }
 
 .nav div:hover {
@@ -114,15 +113,16 @@ a {
 }
 
 .submenu {
-     width: 100%;
+     width: 60%;
      height: 200px;
-     background: rgba(0,0,0,0.7);
+     background: rgba(0,0,0,0.9);
      color: #fff;
      position: absolute;
      top: 100px;
-     right: 0;
+     right: 32px;
      display: none;
      z-index: 200;
+     padding: 1rem;
 }
 
 .submenu ul {
@@ -137,10 +137,12 @@ a {
      height: 50px;
      line-height: 50px;
      float: right;
+     cursor: pointer;
+     text-transform: capitalize;
 }
 
 .submenu li:hover {
-     background: rgba(0,128,0, 0.6);
+     background: rgb(89 115 113);
 }
 
 .banner {
@@ -188,7 +190,7 @@ a {
      margin:0 5px 0;
 }
 .table tr:nth-child(2n) {
-     background: rgba(0, 128, 0, 0.3);
+     background: rgb(255 255 255 / 34%);
 }
 .table > tr  {
      cursor: pointer;
@@ -347,3 +349,31 @@ footer {
      width: 33.33%;
      float: left;
 }
+
+/*Added by MRD*/
+.container{
+     padding: 2.5rem;
+     color: #fff;
+}
+.section-one{
+     display: flex;
+     margin-bottom: 3rem;
+}
+.section-one h2{
+     text-align: center;
+     margin-bottom: 1rem;
+     line-height: 1.5;
+}
+.table-data{
+     flex: 0 0 50%;
+     padding-right: 3rem;
+}
+.table-data table{
+     width: 100%;
+     color: #fff;
+     border: 1px solid #696767;
+}
+.table-data table td{
+     padding: 15px;
+}
+.web-partner{}
