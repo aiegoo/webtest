@@ -1,0 +1,379 @@
+/* reset csss */
+html, body {
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     height: 100%;
+     text-align: left;
+     font-size: 16px;
+     color: #333;
+     position: relative;
+     font-family: sans-serif;
+}
+
+div, ul, li, ol, h1, h2, h3, h4 {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+}
+
+a {
+     text-decoration: none; 
+     color: inherit;
+}
+
+.clear:after {
+     clear: both;
+     display: block;
+     content: "";
+}
+
+/* modal css */
+#modal-bg {
+     width: 100%;
+     height: 100%;
+     background: rgba(0,0,0,0.7);
+     top: 0;
+     left: 0;
+     position: absolute;
+     display: none;
+}
+
+#modal-wrap {
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     display: table-cell;
+     display: none;
+}
+
+#modal-body {
+     background: salmon;
+     width: 400px;
+     height: 400px;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     position: absolute;
+}
+
+#modal-content {
+     color: #fff;
+}
+
+.modal-table {
+     margin: 0 auto;
+     line-height: 25px;
+     font-size: 0.9rem;
+     float: left;
+     padding: 50px;
+}
+
+/* header css */
+.wrap {
+     width: 1000px;
+     margin: 0 auto;
+     background: #303e3d;
+}
+
+.header {
+     position: relative;
+     padding: 2rem;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.logo{
+    flex: 0 0 20%;
+}
+.logo img {width: 100%;}
+
+.navs {
+     text-align: center;
+     border: 1px solid;
+}
+
+.nav {display: flex;}
+
+.nav div {
+     color:#fff;
+     border: 1px solid rgb(255 255 255 / 26%);
+     padding: 1rem;
+     margin-left: -1px;
+     cursor: pointer;
+}
+
+.nav div:hover {
+     background: #fff;
+     color: green;
+}
+
+.submenu .sub-bg {
+     float: right;
+}
+
+.submenu {
+     width: 60%;
+     height: 200px;
+     background: rgba(0,0,0,0.9);
+     color: #fff;
+     position: absolute;
+     top: 100px;
+     right: 32px;
+     display: none;
+     z-index: 200;
+     padding: 1rem;
+}
+
+.submenu ul {
+     width: 150px;
+     float: right;
+     text-align: center;
+     
+}
+
+.submenu li {
+     width: 150px;
+     height: 50px;
+     line-height: 50px;
+     float: right;
+     cursor: pointer;
+     text-transform: capitalize;
+}
+
+.submenu li:hover {
+     background: rgb(89 115 113);
+}
+
+.banner {
+     width: 1000px;
+     height: 300px;
+     margin: 0 auto;
+     position: relative;
+     overflow: hidden;
+     /* z-index: -300; */
+}
+.slide {
+     width: 4000px;
+     height: 300px;
+     position: absolute;
+}
+
+.slide li {
+     float: left;
+}
+
+.slide li img {
+     width: 1000px;
+     height: 300px;
+}
+
+.contents {
+     width: 1000px;
+     height: 100%;
+}
+.notice {
+     width: 49%;
+     float: left;
+}
+.notice h2 {
+     text-align: center;
+     padding: 10px 0;
+}
+.table {
+     color:#000;
+     font-size: 0.8rem;
+     border-collapse: collapse;
+}
+.table tr>td {
+     padding: 9px 0;
+     margin:0 5px 0;
+}
+.table tr:nth-child(2n) {
+     background: rgb(255 255 255 / 34%);
+}
+.table > tr  {
+     cursor: pointer;
+     padding: 20px 0;
+}
+
+.partner {
+     width: 49%;
+     float: left;
+     position: relative;
+}
+.partner_info {
+     position: absolute;
+     width: 360px;text-align: center;
+}
+.partner_info img {
+     width: 100px;
+     float: left;
+}
+.slide-btn {
+     width: 100%;
+     text-align: center;
+     font-size: 3rem;
+     color: cornflowerblue;
+}
+.bts {
+     cursor: pointer;
+}
+
+.yscroll {
+     width: 1000px;
+     height: 450px;
+     overflow: hidden;
+}
+.tab-wrap {
+     width: 900px;
+     margin: 0 auto;
+     padding-top: 20px;
+}
+ul.tabs {
+     width: 900px; 
+     height: 150px;
+     margin: 0 auto;
+     padding: 0;
+}
+ul.tabs li {
+     float: left;
+     width: 33.33%;
+}
+ul.tabs li a {
+     position: relative;
+     display: block;
+     font-size: 1.3rem;
+     margin-top: 40px;
+     font-weight: lighter;
+     text-align: center;
+     color: #fff;
+     background-color: coral;
+     box-shadow: 8px 12px 25px 2px rgba(0,0,0,0.7);
+     border: 1px solid white;
+     transition: padding .2s ease, margin .2s ease;
+}
+.tabs li:first-child a {
+     z-index: 3;
+     border-top-left-radius: 12px;
+}
+.tabs li:nth-child(2) {
+     z-index: 2;
+}
+.tabs li:last-child a {
+     z-index: 1;
+     border-top-right-radius: 12px;
+     box-shadow: 8px 12px 25px;
+}
+
+ul.tabs li a:hover {
+     margin: 35px 0;
+     padding: 8px 0 3px 0;
+}
+ul.tabs li a.active {
+     margin: 30px 000;
+     padding: 10px 0 10px 0; background: slateblue;
+     outline: none ;
+}
+.group:before, .group:after {
+     content: "";
+     display: table;
+
+}
+.group:after {
+     clear: both;
+}
+
+#content {
+     width: 900px;
+     height: 100px;
+     margin: 0 auto;
+     background: rgba(106, 109, 0, 0.3);
+}
+
+p {
+     color: white;
+     line-height: 26px;
+     font-weight: 1.1rem;
+     margin: 0 auto;
+}
+
+#news1 {
+     line-height: 100px;
+     height: 100px;
+     padding: 0.25px;
+     overflow: hidden;
+     margin: 0;
+}
+
+p#news1 {
+     margin: 20px;
+}
+
+
+footer {
+     width:1000px ;
+     height: 100px;
+     overflow: hidden;
+     position: relative;
+     z-index: 9999;
+}
+
+.footer {
+     background: rgba(0,129,0,0.3);
+}
+
+.footer .logo {
+     float: left;
+     padding: 20px;
+}
+
+.footer .logo img {
+     width: 150px;
+}
+
+.footer-wrap {
+     width: 100px;
+     float: left;
+     vertical-align: middle;
+     padding: 5px 0;
+}
+
+.legal {
+     width: 33.33%;
+     float: left;
+     padding: 10px 0;
+}
+
+.copyright {
+     width: 33.33%;
+     float: left;
+}
+
+/*Added by MRD*/
+.container{
+     padding: 2.5rem;
+     color: #fff;
+}
+.section-one{
+     display: flex;
+     margin-bottom: 3rem;
+}
+.section-one h2{
+     text-align: center;
+     margin-bottom: 1rem;
+     line-height: 1.5;
+}
+.table-data{
+     flex: 0 0 50%;
+     padding-right: 3rem;
+}
+.table-data table{
+     width: 100%;
+     color: #fff;
+     border: 1px solid #696767;
+}
+.table-data table td{
+     padding: 15px;
+}
+.web-partner{}
