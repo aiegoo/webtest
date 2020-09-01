@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>index2020b Aug24</title>
+     <link rel="stylesheet" href="css/index2020b.css">
+     <script src="script/jquery-1.12.2.min.js"></script>
+     <script src="script/index2020b.js" defer="defer"></script>
+</head>
+<body>
+<!-- #modal-bg+#modal-wrap>#modal-body>#modal-content>table.modal-table>tr*4>td{0제목}+td{detail}^^span.button{닫기} -->
+
+<div id="modal-bg"></div>
+<div id="modal-wrap">
+     <div id="modal-body">
+          <div id="modal-content">
+               <table class="table-modal">
+                    <tr>
+                         <td>0제목</td>
+                         <td>detail</td>
+                    </tr>
+                    <tr>
+                         <td>0제목</td>
+                         <td>detail</td>
+                    </tr>
+               </table>
+               <span class="button">닫기</span>
+          </div>
+     </div>
+</div> <!-- end of modal -->
+<!-- Begin header section -->
+<!-- div.wrap>.header>.logo>img^div.navs>.nav>div{MENU$}*3^div.submenu>div.sub-bg>ul*4>li{submenu$$}*4 -->
+<div class="wrap">
+     <div class="header">
+          <div class="logo">
+               <img src="images/LOGOsized.png" alt="logo">
+          </div>
+          <div class="navs">
+               <div class="nav">
+                    <div>MENU1</div>
+                    <div>MENU2</div>
+                    <div>MENU3</div>
+               </div>
+               <div class="submenu">
+                    <div class="sub-bg">
+                         <ul>
+                              <li>submenu</li>
+                              <li>submenu</li>
+                              <li>submenu</li>
+                              <li>submenu</li>
+                         </ul>
+                         <ul>
+                              <li>submenu</li>
+                              <li>submenu</li>
+                              <li>submenu</li>
+                              <li>submenu</li>
+                         </ul>
+                         <ul>
+                              <li>submenu</li>
+                              <li>submenu</li>
+                              <li>submenu</li>
+                              <li>submenu</li>
+                         </ul>
+                    </div>
+               </div>
+          </div>
+     </div><!-- end of header -->
+     <!-- begin banner -->
+<!--      div.banner>ul.slide>li*4>img[src="../exam4/images/images$.jpg"]
+ -->
+     <div class="banner">
+          <ul class="slide">
+               <li><img src="images/images1.jpg" alt="#"></li>
+               <li><img src="images/images2.jpg" alt="#"></li>
+               <li><img src="images/images3.jpg" alt="#"></li>
+          </ul>
+     </div> <!-- end of banner -->
+</div> <!-- end of wrap -->
+<!-- begin contents  -->
+<!-- div.contents.wrap.clear>.notice>h2{공지사항}+table.talbe>tr>td>a>u{lorem}^^^tr*3>td.td{lorem}
+div.contents.wrap.clear>.notice>h2{notice}+table.table>tr>td>a>u{lorem}^^^tr*3>td.td{lorem}
+ -->
+<div class="contents wrap clear">
+     <div class="notice">
+          <h2>notice</h2>
+          <table class="table">
+               <tr>
+                    <td><a href="javascript:modalOpen();"><u>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit dolore voluptatem magni officiis sed? Labore libero expedita quae ullam consequatur atque laboriosam, autem quis voluptatem, sit, deserunt velit amet hic.</u></a></td>
+               </tr>
+               <tr>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum expedita quibusdam fuga eum asperiores! Perspiciatis, magni sint, hic nemo explicabo enim distinctio accusantium, dolores laborum fugit fuga maiores qui asperiores!</td>
+               </tr>
+               <tr>
+                    <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia error ab nisi aut accusamus inventore dicta eligendi soluta? Impedit magnam consectetur esse nesciunt maiores itaque dicta error quisquam! Minus, amet!</td>
+               </tr>
+               <tr>
+                    <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere corporis ab nam unde quaerat quasi veritatis eum autem omnis exercitationem, ea pariatur sed earum eveniet! Excepturi expedita repellendus iusto. Perferendis.</td>
+               </tr>
+          </table>
+     </div><!-- end of otice -->
+     <!-- bengin partner -->
+    <!--  div.partner>.partner_info>a[href="javascript:popUp();"]>img[src="../exam5/images/icon$.png"]*3^^div.slide-btn>span.bts{&#x25cf;}*3 -->
+     <div class="partner">
+          <div class="partner_info">
+               <a href="javascript: popUp();">
+                    <img src="images/icon1.png" alt="">
+                    <img src="images/icon2.png" alt="">
+                    <img src="images/icon3.png" alt="">
+               </a>
+          </div>
+          <div class="slide-btn">
+               <span class="bts">&#x25cf;</span>
+               <span class="bts">&#x25cf;</span>
+               <span class="bts">&#x25cf;</span>
+          </div>
+     </div>  <!-- end of partner  -->
+     <!-- begin gallery, tabs -->
+     <!-- div.gallery>.gallery-wrap>ul.imgs>a>li>img{../images/images($).jpg}*2  -->
+     <div class="gallery">
+          <div class="gallery-wrap">
+               <ul class="imgs">
+                    <a href="javascript: popUp();">
+                         <li><img src="images/partner/PARTNER.png" alt=""><img src="images/partner/PARTNER_UP.png" alt=""></li>
+                    </a>
+               </ul>
+          </div>
+     </div> <!-- end of gallery -->
+     <!-- div.yscroll>div.tab-wrap>ul.tabs.group>li*3>a[href="#/news$"]^^div.#content>p#news$*3
+     div.yscroll>div.tab-wrap>ul.tabs.group>li*3>a[href="#/news$"]{headlines$}^^div#content>p#news$*3{lorem} -->
+     <div class="yscroll">
+          <div class="tab-wrap">
+               <ul class="tabs group">
+                    <li><a href="#/news1">headlines1</a></li>
+                    <li><a href="#/news2">headlines2</a></li>
+                    <li><a href="#/news3">headlines3</a></li>
+               </ul>
+               <div id="content">
+                    <p id="news1">lorem</p>
+                    <p id="news2">lorem</p>
+                    <p id="news3">lorem</p>
+               </div>
+          </div>
+     </div>
+</div><!-- end of contents -->
+<!-- .clear>footer.footer.wrap>.logo>img^.footer-wrap>.legal>li*3^.copyright+div.family>li*3>a  -->
+<div class="clear"></div>
+<footer class="footer wrap">
+     <div class="logo"><img src="images/LOGOsized.png" alt="#"></div>
+     <div class="footer-wrap">
+          <div class="legal">
+               <li>Privacy</li>
+               <li>Policy</li>
+               <li>Issues</li>
+          </div>
+          <div class="copyright">forward this</div>
+          <div class="family">
+               <li><a href="#">link1</a></li>
+               <li><a href="#">link2</a></li>
+               <li><a href="#">link3</a></li>
+          </div>
+     </div>
+</footer>
+</body>
+</html>
