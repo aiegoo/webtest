@@ -117,31 +117,156 @@ div.contents.wrap.clear>.notice>h2{notice}+table.table>tr>td>a>u{lorem}^^^tr*3>t
      </div>  <!-- end of partner  -->
      <!-- begin gallery, tabs -->
      <!-- div.gallery>.gallery-wrap>ul.imgs>a>li>img{../images/images($).jpg}*2  -->
-     <div class="gallery">
-          <div class="gallery-wrap">
-               <ul class="imgs">
-                    <a href="javascript: popUp();">
-                         <li><img src="images/partner/PARTNER.png" alt=""><img src="images/partner/PARTNER_UP.png" alt=""></li>
-                    </a>
-               </ul>
-          </div>
-     </div> <!-- end of gallery -->
+       
+<section class="carousel" aria-label="Gallery">
+  <ol class="carousel__viewport">
+    <li id="carousel__slide1"
+        tabindex="0"
+        class="carousel__slide">
+     <a id2="carousel__slide1" class="btn" href="#open-modal"> 
+         <div class="carousel__snapper">
+        
+          <span class="content">
+          This is content 1
+              </span></div></a>
+        <a href="#carousel__slide4"
+           class="carousel__prev">Go to last slide</a>
+        <a href="#carousel__slide2"
+           class="carousel__next">Go to next slide</a>
+           
+    </li>
+    <li id="carousel__slide2"
+        tabindex="0"
+        class="carousel__slide">
+          <a id2="carousel__slide2" class="btn" href="#open-modal"> 
+         <div class="carousel__snapper">
+        
+          <span class="content">
+          This is content 2
+              </span></div></a>
+    
+    
+      <a href="#carousel__slide1"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide3"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide3"
+        tabindex="0"
+        class="carousel__slide">
+          <a id2="carousel__slide3" class="btn" href="#open-modal"> 
+         <div class="carousel__snapper">
+        
+          <span class="content">
+          This is content 3
+              </span></div></a>
+        
+      <a href="#carousel__slide2"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide4"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide4"
+        tabindex="0"
+        class="carousel__slide">
+        <a id2="carousel__slide4" class="btn" href="#open-modal"> 
+         <div class="carousel__snapper">
+        
+          <span class="content">
+          This is content 4 
+              </span></div></a>
+        
+      <a href="#carousel__slide3"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide1"
+         class="carousel__next">Go to first slide</a>
+    </li>
+  </ol>
+  <aside class="carousel__navigation">
+    <ol class="carousel__navigation-list">
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide1"
+           class="carousel__navigation-button">Go to slide 1</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide2"
+           class="carousel__navigation-button">Go to slide 2</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide3"
+           class="carousel__navigation-button">Go to slide 3</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide4"
+           class="carousel__navigation-button">Go to slide 4</a>
+      </li>
+    </ol>
+  </aside>
+</section>
+    
+    
+    <!-- end of gallery -->
      <!-- div.yscroll>div.tab-wrap>ul.tabs.group>li*3>a[href="#/news$"]^^div.#content>p#news$*3
      div.yscroll>div.tab-wrap>ul.tabs.group>li*3>a[href="#/news$"]{headlines$}^^div#content>p#news$*3{lorem} -->
      <div class="yscroll">
           <div class="tab-wrap">
-               <ul class="tabs group">
-                    <li><a href="#/news1">headlines1</a></li>
-                    <li><a href="#/news2">headlines2</a></li>
-                    <li><a href="#/news3">headlines3</a></li>
-               </ul>
-               <div id="content">
-                    <p id="news1">lorem</p>
-                    <p id="news2">lorem</p>
-                    <p id="news3">lorem</p>
-               </div>
+              <div class="about">
+   <a class="bg_links social portfolio" href="https://www.rafaelalucas.com" target="_blank">
+      <span class="icon"></span>
+   </a>
+   <a class="bg_links social dribbble" href="https://dribbble.com/rafaelalucas" target="_blank">
+      <span class="icon"></span>
+   </a>
+   <a class="bg_links social linkedin" href="https://www.linkedin.com/in/rafaelalucas/" target="_blank">
+      <span class="icon"></span>
+   </a>
+   <a class="bg_links logo"></a>
+</div>
+<!-- end about -->
+
+<section id="tab_panel">
+   <div class="">
+      <!-- Tab links -->
+      <div class="tabs">
+         <button class="tablinks active" data-country="London"><p data-title="London">Headlines 1</p></button>
+         <button class="tablinks" data-country="Paris"><p data-title="Paris">Headlines 2</p></button>
+         <button class="tablinks" data-country="Barcelona"><p data-title="Barcelona">Headlines 3</p></button>
+         <button class="tablinks" data-country="Madrid"><p data-title="Madrid">Headlines 4</p></button>
+      </div>
+
+      <!-- Tab content -->
+      <div class="wrapper_tabcontent">
+         <div id="London" class="tabcontent active">
+            <h3>London</h3>
+            <p>London is the capital of Great Britain. It is one of the greatest cities in the world. It is an important business and financial centre. It is an intellectual centre, too. Everywhere in London, there are open spaces: Hyde Park and Regent Park are the largest. The City is the oldest part of London. </p>
+         </div>
+
+         <div id="Paris" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is in the Paris department of the Paris-Isle-of-France region The French historic, political and economic capital, with a population of only 2.5 million is located in the northern part of France. One of the most beautiful cities in the world. Home to historical monuments such as Notre Dame, the Eiffel tower (320m), Bastille, Louvre and many more. </p>
+         </div>
+
+         <div id="Barcelona" class="tabcontent">
+            <h3>Barcelona</h3>
+            <p>Barcelona has been an urban laboratory since the high Medieval Ages. A place of diversity, a backdrop for a multiplicity of social and cultural processes on multiple scales that reflect different ways of constructing the future, a city with a long experience of urban life and social innovations. </p>
+         </div>
+
+         <div id="Madrid" class="tabcontent">
+            <h3>Madrid</h3>
+            <p>Madrid is in the middle of Spain, in the Community of Madrid. The Community is a large area that includes the city as well as small towns and villages outside the city. 7 million people live in the Community. More than 3 million live in the city itself. 
+            </p>
+         </div>
+      </div>
+   </div>
+</section>
           </div>
+          <!-- about -->
+
      </div>
+    
+    
+     
+     
 </div><!-- end of contents -->
 <!-- .clear>footer.footer.wrap>.logo>img^.footer-wrap>.legal>li*3^.copyright+div.family>li*3>a  -->
 <div class="clear"></div>
@@ -161,5 +286,47 @@ div.contents.wrap.clear>.notice>h2{notice}+table.table>tr>td>a>u{lorem}^^^tr*3>t
           </div>
      </div>
 </footer>
+     
+     
+    <script>
+    // tabs
+
+var tabLinks = document.querySelectorAll(".tablinks");
+var tabContent = document.querySelectorAll(".tabcontent");
+
+
+tabLinks.forEach(function(el) {
+   el.addEventListener("click", openTabs);
+});
+
+
+function openTabs(el) {
+   var btnTarget = el.currentTarget;
+   var country = btnTarget.dataset.country;
+
+   tabContent.forEach(function(el) {
+      el.classList.remove("active");
+   });
+
+   tabLinks.forEach(function(el) {
+      el.classList.remove("active");
+   });
+
+   document.querySelector("#" + country).classList.add("active");
+   
+   btnTarget.classList.add("active");
+}
+        
+        
+    $(document).on("click",".btn",function() {
+      var id2 = $(this).attr("id2");
+      var content = $(this).find(".content").html();
+        
+        $("#m_content").html(content);
+    });
+ 
+</script>
+     
+     
 </body>
 </html>
