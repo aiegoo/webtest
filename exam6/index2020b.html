@@ -323,8 +323,7 @@ function openTabs(el) {
    btnTarget.classList.add("active");
 }
         jQuery(document).ready(function( $ ){
-        
-    $(document).on("click",".btn",function() {
+     $(".btn").click(function(){
       var id2 = $(this).attr("id2");
       var content = $(this).find(".content").html();
         
