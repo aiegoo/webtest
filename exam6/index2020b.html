@@ -322,7 +322,7 @@ function openTabs(el) {
    
    btnTarget.classList.add("active");
 }
-        
+        jQuery(document).ready(function( $ ){
         
     $(document).on("click",".btn",function() {
       var id2 = $(this).attr("id2");
@@ -330,7 +330,7 @@ function openTabs(el) {
         
         $("#m_content").html(content);
     });
- 
+ });
 </script>
      
      
