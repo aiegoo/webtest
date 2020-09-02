@@ -48,7 +48,7 @@ $(".bts").click(function(){
 
 });
 
-(function($){
+
      var tabs = $(".tabs li a");
 
      tabs.click(function(){
@@ -58,6 +58,6 @@ $(".bts").click(function(){
           $("#content").find("p").hide();
           $(content).fadeIn(200);
      });
-})(jquery);
+
 
 
