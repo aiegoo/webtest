@@ -387,3 +387,10 @@ p#news1 {
      width: 33.33%; 
      float: left;
 }
+
+
+.submenu {
+    z-index:99999999999999999 !important;
+    background:rgba(0,0,0,0.7) !important
+}
+
