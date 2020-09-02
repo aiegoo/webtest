@@ -394,3 +394,18 @@ p#news1 {
     background:rgba(0,0,0,0.7) !important
 }
 
+.notice {
+    padding:10px;
+}
+.notice table tr td {
+padding:20px !important;
+line-height:20px !important
+}
+
+.gallery {
+    margin-left:100px;
+}
+
+.partner {
+        margin-left:100px;
+}
