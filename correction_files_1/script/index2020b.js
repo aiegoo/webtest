@@ -20,7 +20,7 @@ $(".navs #menu-2").hover(
 
 var n = 0;
 (function ani() {
-  $(".banner ul")
+  $(".banner .slide")
     .delay(2000)
     .animate({ left: "-=1000px" }, 2000, function () {
       n++;

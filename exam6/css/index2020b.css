@@ -96,6 +96,7 @@ a {
 /* header section */
 
 .wrap {
+     width: 1000px;
      margin: 0 auto;
 }
 
@@ -123,7 +124,7 @@ a {
 }
 .nav div {
      color: #fff;
-     width: 192px;
+     width: 200px;
      float: left;
      line-height: 100px;
 }
@@ -163,29 +164,23 @@ a {
 .submenu li:hover {
      background: rgba(0,128,0,0.6);
 }
-
 .banner {
-     width: 3000px;
-     height: 300px;
+     width: 1000px;
+     height: 400px;
+     position: relative;
      margin: 0 auto;
-     position: relative;;
-}
-ul.slide {
-     width: 1000px;
-     height: 300px;
-     z-index: -1;
      overflow: hidden;
-}
-
-.slide li {
-     float: left;
+   }
+   .slide {
+     width: 3000px;
+     height: 400px;
      position: absolute;
-}
-
-.slide li img {
-     width: 1000px;
-     height: 300px;
-}
+     top: 0;
+   }
+   .slide li {
+     float: left;
+   }
+   
 
 .contents {
      width: 1000px;
