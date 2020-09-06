@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>popup for greenHouse</title>
+</head>
+<body>
+     <form action="https://example.com/contact.php">
+          <table>
+               <tr>
+                    <td>Name:<input type="name" name="name" placeholder="your name"></td>
+               </tr>
+               <tr>
+                    <td>email:<input type="email" name="email" placeholder="your email"></td>
+               </tr>
+               <tr>
+                    <td><textarea name="message" id="message" cols="20" rows="10" placeholder="please be kind"></textarea></td>
+               </tr>
+          </table>
+          <button type="button" class="popup-btn" onclick="alert('sent succesfully'); self.close();">보내기</button>
+     </form><!-- form[action="https://example.com/join.php"]>table>tr>td{name: }>input -->
+</body>
+</html>

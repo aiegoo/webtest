@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>popup for hello-popup 2020</title>
+</head>
+<body>
+     <!-- form>table>tr*3>td{name}>input^^^button.popup-btn -->
+     <form action="https://example.com/contact.php">
+          <table>
+               <tr>
+                    <td>name<input type="name" name="name"></td>
+               </tr>
+               <tr>
+                    <td>email<input type="email" name="email" placeholder="your email"></td>
+               </tr>
+               <tr><textarea name="message" id="message" cols="30" rows="10"></textarea></tr>
+          </table>
+          <button class="popup-btn" type="button" onclick="alert('sent succesffuly'); self.close">Submit</button>
+     </form>
+
+</body>
+</html>
