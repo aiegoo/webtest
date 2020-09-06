@@ -387,4 +387,37 @@ p#news1 {
 .copyright {
      width: 33.33%; 
      float: left;
+<<<<<<< HEAD
 }
+=======
+}
+
+
+.submenu {
+    z-index:99999999999999999 !important;
+    background:rgba(0,0,0,0.7) !important
+}
+
+.notice {
+    padding:10px;
+}
+.notice table tr td {
+padding:20px !important;
+line-height:20px !important
+}
+
+.gallery {
+    margin-left:100px;
+}
+
+.partner {
+        margin-left:100px;
+}
+
+.notice tr td{
+    line-height:40px !important;
+    font-size:18px !important;
+    
+}
+
+>>>>>>> 07718eb95334f88e59f34b450e17dd0bd5d100bd
