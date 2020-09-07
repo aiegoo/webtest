@@ -22,13 +22,21 @@ var n = 0;
 })();
 
 function modalOpen() {
-  $("#modal-bg").show(0);
-  $("#modal-wrap").css("display", "table-cell");
+  // you need only to change css porperty
+  // $("#modal-bg").show(0);
+  $("#modal-bg").css("display", "block");
 }
-function modalClose() {
-  $("#modal-bg").hide();
-  $("#modal-wrap").css("display", "none");
-}
+// you need to make btn when you clicked on it close the popup
+$("#btn-close").on("click", function () {
+  $("#modal-bg").css("display", "none");
+});
+
+// this is wrong way to do the hide and show
+
+// function modalClose() {
+//   $("#modal-bg").hide();
+//   $("#modal-bg").css("display", "none");
+// }
 
 function popUp() {
   window.open(
@@ -57,11 +65,12 @@ var depth = 20;
 
 $(".bts").click(function () {
   var x = $(this).index();
-  $(".bts").css("color", "#f30");
-  $(".partner_info").eq(x).css("color", "#000");
-  $(".partner_info")
+  // to rest all colors
+  $(".bts").css("color", "cornflowerblue");
+  $(this).css("color", "#f30");
+  $(".partner_info a")
     .eq(x)
-    .animate({ left: -x * 100 + "px" }, 2000);
+    .animate({ marginLeft: -x * 100 + "px" }, 2000);
 });
 
 var tabs = $(".tabs li a");

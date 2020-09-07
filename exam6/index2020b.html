@@ -11,11 +11,31 @@
   <body>
     <!-- #modal-bg+#modal-wrap>#modal-body>#modal-content>table.modal-table>tr*4>td{0제목}+td{detail}^^span.button{닫기} -->
 
-    <div id="modal-bg"></div>
-    <div id="modal-wrap">
+    <!-- background should be the parent 
+        you don't need wrap while you have modal-bg
+     -->
+
+    <div id="modal-bg">
+      <!-- <div id="modal-wrap"> -->
       <div id="modal-body">
         <div id="modal-content">
-          <table class="table-modal">
+          <form action="">
+            <div class="input-area">
+              <label class="label-head" for="">Name</label>
+              <input class="input" type="text" name="" id="" />
+            </div>
+            <div class="input-area">
+              <label class="label-head" for="">Email</label>
+              <input class="input" type="email" name="" id="" />
+            </div>
+            <label class="label-head">message</label>
+            <textarea class="text-area" id="" rows="3"></textarea>
+            <button type="button" class="btn">Submit</button>
+            <div class="btn-close" id="btn-close">
+              <a href="javascript:modalOpen()"></a> X
+            </div>
+          </form>
+          <!-- <table class="table-modal">
             <tr>
               <td>0제목</td>
               <td>detail</td>
@@ -25,9 +45,10 @@
               <td>detail</td>
             </tr>
           </table>
-          <span class="button">닫기</span>
+          <span class="button">닫기</span> -->
         </div>
       </div>
+      <!-- </div> -->
     </div>
     <!-- end of modal -->
     <!-- Begin header section -->
@@ -156,7 +177,11 @@ div.contents.wrap.clear>.notice>h2{notice}+table.table>tr>td>a>u{lorem}^^^tr*3>t
                 images is white color so we need to change background to be able to see it 
               -->
               <img src="images/icons/icon1.png" alt="" />
+            </a>
+            <a href="javascript: popUp();">
               <img src="images/icons/icon2.png" alt="" />
+            </a>
+            <a href="javascript: popUp();">
               <img src="images/icons/icon3.png" alt="" />
             </a>
           </div>
@@ -170,7 +195,7 @@ div.contents.wrap.clear>.notice>h2{notice}+table.table>tr>td>a>u{lorem}^^^tr*3>t
       <!-- end of partner  -->
       <!-- div.yscroll>div.tab-wrap>ul.tabs.group>li*3>a[href="#/news$"]^^div.#content>p#news$*3
      div.yscroll>div.tab-wrap>ul.tabs.group>li*3>a[href="#/news$"]{headlines$}^^div#content>p#news$*3{lorem} -->
-      <!-- !<div class="yscroll">
+       <div class="yscroll">
         <div class="tab-wrap">
           <ul class="tabs group">
             <li><a href="#/news1">headlines1</a></li>
@@ -183,7 +208,7 @@ div.contents.wrap.clear>.notice>h2{notice}+table.table>tr>td>a>u{lorem}^^^tr*3>t
             <p id="news3">lorem</p>
           </div>
         </div>
-      </div> -->
+      </div> 
     </div>
     <!-- end of contents -->
     <!-- .clear>footer.footer.wrap>.logo>img^.footer-wrap>.legal>li*3^.copyright+div.family>li*3>a  -->

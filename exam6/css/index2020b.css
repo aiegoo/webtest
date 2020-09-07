@@ -38,6 +38,9 @@ a {
 }
 
 /* modal css */
+/*
+  you need to add z-index to the background
+ */
 
 #modal-bg {
   width: 100%;
@@ -46,30 +49,81 @@ a {
   top: 0;
   left: 0;
   position: absolute;
+  z-index: 9999;
   display: none;
 }
 
+/*
+  no need it
 #modal-wrap {
   width: 100%;
   height: 100%;
   position: absolute;
   display: table-cell;
-  display: none;
-}
+  /* display: none; 
+} */
+/* you using line-heigh wrong 
+  for body you need the position being relative no absolute then the elements in 
+  being absolute
+  i will give some padding for elements 
+  you don't need to center elements
 
+*/
 #modal-body {
   background: salmon;
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  position: absolute;
+  position: relative;
   vertical-align: middle;
-  text-align: center;
-  line-height: 400px;
+  padding: 10px;
+  /* text-align: center; */
+
+  /* line-height: 400px; */
 }
 
+/* the inputs style */
+
+.input-area {
+  margin: 10px 0;
+  width: 100%;
+}
+
+.label-head {
+  display: block;
+  margin: 3px;
+}
+.input {
+  height: 20px;
+}
+.input,
+.text-area {
+  width: 90%;
+}
+.btn {
+  display: block;
+  width: 100px;
+  height: 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #fff;
+  color: #000;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+/* 
 #modal-content {
   color: #fff;
 }
@@ -100,7 +154,7 @@ a {
   padding: 2rem;
   background: chartreuse;
   font-size: 3rem;
-}
+} */
 
 /* header section */
 
@@ -223,20 +277,20 @@ a {
   cursor: pointer;
   padding: 20px 0;
 }
+.partner {
+  height: 150px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
 .partner_info {
-  position: relative;
-  top: -143px;
-  left: 0;
   text-align: center;
 }
 /* you don't need to use float */
 .partner_info img {
   width: 50px;
-  margin: 0 20px;
+  margin: 10px;
 }
 .slide-btn {
-  position: relative;
-  top: -60px;
   text-align: center;
   color: cornflowerblue;
   font-size: 3rem;
@@ -272,7 +326,7 @@ a {
 .gallery {
   width: 100%;
   margin-top: 47px;
-  height: 210px;
+  height: 204px;
 }
 /* like i said you use parcent if the parent his width with px 
 /* i add some height for element to see images 
@@ -288,13 +342,14 @@ a {
 }
 
 .gallery-wrap .imgs {
-  position: absolute;
+  position: relative;
   top: 0;
   width: 1000px;
   overflow: hidden;
   /* text-align: center; 
   margin-left: 30px;*/
 }
+
 .gallery-wrap .imgs img {
   width: 500px;
   height: 200px;
@@ -308,21 +363,21 @@ a {
   overflow: hidden;
 }
 .tab-wrap {
-  width: 540px;
+  width: 500px;
   margin: 0 auto;
   overflow: hidden;
-  padding: 0;
+  /* padding: 0;
   margin-bottom: -50px;
-  padding-top: 20px;
+  padding-top: 20px; */
 }
 
 ul.tabs {
   width: 100%;
-  height: 150px;
+  /* height: 150px; */
   margin: 0 auto;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 0;
-  margin-bottom: -50px;
+  /* margin-bottom: -50px; */
 }
 
 ul.tabs li {
