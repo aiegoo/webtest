@@ -1,0 +1,52 @@
+html,
+body {
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     height: 100%;
+     text-align: left;
+     overflow-x: hidden;
+     font-size: 16px;
+     font-family: 'ms';
+}
+
+div, ul, li, ol, h1, h2, h3, h4, h5 {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+}
+
+a {
+     text-decoration: none;
+     color: inherit;
+}
+
+clear:after {
+     clear: both;
+     display: block;
+     content: "";
+}
+.wrap {
+     width: 1200px;
+     margin: 0 auto;
+}
+
+.header {
+     width: 1200px;
+     height: 100px;
+     color: #999;
+     background: rgba(111, 111, 111, 0.2);
+}
+
+.logo {
+     float: left;
+}
+.logo img {
+     width: 120px;
+}
+
+.navs {
+     float: right;
+     position: relative;
+     
+}
