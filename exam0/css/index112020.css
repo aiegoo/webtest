@@ -48,5 +48,14 @@ clear:after {
 .navs {
      float: right;
      position: relative;
-     
+     text-align: center;
+}
+.nav {
+     float: left;
+     width: 200px;
+}
+
+.nav div {
+     color: yellow;
+     font-weight: bolder;
 }
